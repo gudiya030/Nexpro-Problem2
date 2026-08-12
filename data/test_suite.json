@@ -1,0 +1,166 @@
+{
+  "suite_name": "nexpro_problem2_evaluation_suite",
+  "description": "20 fixed cases covering correctness, faithfulness, completeness and instruction following.",
+  "cases": [
+    {
+      "id": "q01",
+      "input": "What is supervised learning?",
+      "system_prompt": "Answer for a beginner in 2-3 sentences.",
+      "model_output_a": "Supervised learning trains a model on labelled input-output examples so it can learn a mapping and predict outputs for new inputs.",
+      "model_output_b": "Supervised learning learns from labelled examples. For example, it can learn to classify emails as spam or not spam.",
+      "expected_output": "Supervised learning learns from labelled input-output examples to predict outputs for new inputs."
+    },
+    {
+      "id": "q02",
+      "input": "What is overfitting?",
+      "system_prompt": "Give a concise technical explanation.",
+      "model_output_a": "Overfitting happens when a model learns the training data too closely, including noise, so training performance is high but performance on unseen data is poor.",
+      "model_output_b": "Overfitting means the model is too simple and cannot learn the training pattern.",
+      "expected_output": "Overfitting occurs when a model fits training data too closely and generalizes poorly to unseen data."
+    },
+    {
+      "id": "q03",
+      "input": "What is an LLM?",
+      "system_prompt": "Explain for a college student.",
+      "model_output_a": "An LLM is a large language model trained on large amounts of text to understand and generate natural language. It predicts likely token sequences from context.",
+      "model_output_b": "An LLM is a database that stores every answer people have written.",
+      "expected_output": "An LLM is a machine-learning model trained on large amounts of text to understand and generate language."
+    },
+    {
+      "id": "q04",
+      "input": "Why is train/test splitting used?",
+      "system_prompt": "Answer in simple language.",
+      "model_output_a": "A train/test split lets us train on one portion of data and evaluate generalization on unseen data.",
+      "model_output_b": "It is mainly used to make the training dataset larger.",
+      "expected_output": "The split separates training data from unseen test data so generalization can be evaluated."
+    },
+    {
+      "id": "q05",
+      "input": "What is precision in classification?",
+      "system_prompt": "Give the definition and formula.",
+      "model_output_a": "Precision is the fraction of predicted positives that are actually positive: TP / (TP + FP).",
+      "model_output_b": "Precision is the fraction of actual positives that the classifier correctly identifies: TP / (TP + FN).",
+      "expected_output": "Precision = TP / (TP + FP), measuring how many predicted positives are truly positive."
+    },
+    {
+      "id": "q06",
+      "input": "What is a vector embedding?",
+      "system_prompt": "Explain briefly.",
+      "model_output_a": "An embedding represents an item such as text as a numerical vector that captures useful semantic relationships.",
+      "model_output_b": "An embedding is a compressed image file.",
+      "expected_output": "An embedding is a numerical vector representation that captures semantic or other useful features."
+    },
+    {
+      "id": "q07",
+      "input": "What does temperature control in text generation?",
+      "system_prompt": "Answer accurately and concisely.",
+      "model_output_a": "Temperature changes the randomness of token selection. Higher values generally make outputs more varied, while lower values make them more deterministic.",
+      "model_output_b": "Temperature controls the physical temperature of the GPU.",
+      "expected_output": "Temperature controls randomness in token sampling; higher values generally increase variation."
+    },
+    {
+      "id": "q08",
+      "input": "What is data leakage?",
+      "system_prompt": "Give a one-paragraph explanation.",
+      "model_output_a": "Data leakage occurs when information unavailable at prediction time is accidentally used during training or evaluation, causing overly optimistic results.",
+      "model_output_b": "Data leakage is when a dataset is stored in the cloud.",
+      "expected_output": "Data leakage occurs when information that should be unavailable is used during training or evaluation."
+    },
+    {
+      "id": "q09",
+      "input": "What is recall?",
+      "system_prompt": "Give the formula and a one-sentence explanation.",
+      "model_output_a": "Recall is TP / (TP + FN), the fraction of actual positive cases that were correctly identified.",
+      "model_output_b": "Recall is TP / (TP + FP), the fraction of predicted positives that are correct.",
+      "expected_output": "Recall = TP / (TP + FN), measuring how many actual positives are found."
+    },
+    {
+      "id": "q10",
+      "input": "What is a confusion matrix?",
+      "system_prompt": "Explain its purpose.",
+      "model_output_a": "A confusion matrix summarizes classification results using true positives, true negatives, false positives, and false negatives.",
+      "model_output_b": "A confusion matrix is a matrix used only to store model weights.",
+      "expected_output": "A confusion matrix summarizes TP, TN, FP, and FN classification outcomes."
+    },
+    {
+      "id": "q11",
+      "input": "Why normalize features?",
+      "system_prompt": "Answer in 2 sentences.",
+      "model_output_a": "Feature scaling can put variables on comparable numerical ranges, which can help distance-based and gradient-based algorithms behave better.",
+      "model_output_b": "Normalization always improves every machine-learning model and is mandatory.",
+      "expected_output": "Feature scaling puts variables on comparable ranges and can improve optimization or distance calculations for some algorithms."
+    },
+    {
+      "id": "q12",
+      "input": "What is cross-validation?",
+      "system_prompt": "Explain simply.",
+      "model_output_a": "Cross-validation repeatedly splits data into training and validation portions so model performance can be estimated more reliably.",
+      "model_output_b": "Cross-validation means validating the final model only once on its training data.",
+      "expected_output": "Cross-validation evaluates a model across multiple train-validation splits to estimate generalization."
+    },
+    {
+      "id": "q13",
+      "input": "What is an API?",
+      "system_prompt": "Explain for a beginner.",
+      "model_output_a": "An API is an interface that lets one software component request data or functionality from another using defined rules.",
+      "model_output_b": "An API is a type of database that stores passwords.",
+      "expected_output": "An API defines how software components communicate and request data or actions."
+    },
+    {
+      "id": "q14",
+      "input": "What is retrieval-augmented generation?",
+      "system_prompt": "Answer in 3 sentences.",
+      "model_output_a": "RAG retrieves relevant external documents and gives them to a language model as context before generation. This can improve grounding and allow answers to use a changing knowledge source.",
+      "model_output_b": "RAG means the language model permanently memorizes every document in a database.",
+      "expected_output": "RAG retrieves relevant external context and supplies it to a generator so the answer can be grounded in retrieved information."
+    },
+    {
+      "id": "q15",
+      "input": "Why use a validation set?",
+      "system_prompt": "Keep it concise.",
+      "model_output_a": "A validation set is used during development to compare configurations or tune choices without using the final test set.",
+      "model_output_b": "A validation set is the same thing as the training set and is used to memorize labels.",
+      "expected_output": "A validation set supports model or hyperparameter decisions while keeping the final test set separate."
+    },
+    {
+      "id": "q16",
+      "input": "What is hallucination in an LLM?",
+      "system_prompt": "Give a careful definition.",
+      "model_output_a": "An LLM hallucination is a generated claim that is unsupported, fabricated, or inconsistent with the available evidence.",
+      "model_output_b": "Hallucination means an LLM is thinking like a human and therefore has consciousness.",
+      "expected_output": "An LLM hallucination is an unsupported or fabricated generated claim."
+    },
+    {
+      "id": "q17",
+      "input": "What is cosine similarity?",
+      "system_prompt": "Give the formula conceptually.",
+      "model_output_a": "Cosine similarity compares the angle between two vectors, commonly using their normalized dot product. A larger value generally means greater directional similarity.",
+      "model_output_b": "Cosine similarity is the Euclidean distance between two database rows.",
+      "expected_output": "Cosine similarity measures directional similarity between vectors using their normalized dot product."
+    },
+    {
+      "id": "q18",
+      "input": "What is an idempotent operation?",
+      "system_prompt": "Give one software example.",
+      "model_output_a": "An idempotent operation can be repeated without changing the final result after the first successful application. For example, replacing a resource with the same representation can be idempotent.",
+      "model_output_b": "An idempotent operation must always produce a random result each time.",
+      "expected_output": "An idempotent operation can be repeated without changing the final state after the first successful application."
+    },
+    {
+      "id": "q19",
+      "input": "Why log model evaluations?",
+      "system_prompt": "Mention auditability.",
+      "model_output_a": "Evaluation logs make prompts, raw responses, scores, latency, and failures auditable and help reproduce or debug regressions.",
+      "model_output_b": "Logging is unnecessary because model outputs are always deterministic.",
+      "expected_output": "Logs provide an audit trail for prompts, responses, scores, latency, and failures."
+    },
+    {
+      "id": "q20",
+      "input": "When should a human review an LLM judge decision?",
+      "system_prompt": "Answer practically.",
+      "model_output_a": "Human review is appropriate for borderline scores, safety-sensitive failures, high-impact decisions, or cases where automated judge reliability is uncertain.",
+      "model_output_b": "A human should never review an LLM judge because the judge is always correct.",
+      "expected_output": "Human review should remain available for borderline, high-impact, safety-sensitive, or unreliable automated decisions."
+    }
+  ]
+}
